@@ -49,3 +49,32 @@ ${details}`;
     });
 
 });
+
+// MOBILE MENU
+
+const menuToggle =
+document.getElementById("menu-toggle");
+
+const navLinks =
+document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", function(){
+
+    navLinks.classList.toggle("active");
+
+});
+
+// CLOSE MENU AFTER CLICKING LINK
+
+const navItems =
+document.querySelectorAll(".nav-links a");
+
+navItems.forEach(item => {
+
+    item.addEventListener("click", () => {
+
+        navLinks.classList.remove("active");
+
+    });
+
+});
