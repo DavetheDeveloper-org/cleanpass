@@ -11,6 +11,26 @@ body{
     line-height:1.6;
 }
 
+/* LOGO */
+
+.logo-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-image{
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    color:#0d6efd;
+}
 .container{
     width:90%;
     max-width:1200px;
